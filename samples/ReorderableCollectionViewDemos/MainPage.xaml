@@ -1,0 +1,67 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:rcv="clr-namespace:ReorderableCollectionView.Maui;assembly=ReorderableCollectionView.Maui"
+             xmlns:views="clr-namespace:ReorderableCollectionViewDemos.Views"
+             x:Class="ReorderableCollectionViewDemos.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}" Title="ReorderableCollectionView Demos">
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection Title="Layout">
+                <TextCell Text="Vertical list"
+                          Detail="DataTemplate"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:VerticalListPage}" />
+                <TextCell Text="Horizontal list"
+                          Detail="DataTemplate"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:HorizontalListPage}" />
+                <TextCell Text="Vertical grid"
+                          Detail="DataTemplate"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:VerticalGridPage}" />
+                <TextCell Text="Horizontal grid"
+                          Detail="DataTemplate"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:HorizontalGridPage}" />
+                <TextCell Text="Variable span grid"
+                          Detail="DataTemplate"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:VariableSpanGridPage}" />
+            </TableSection>
+
+            <TableSection Title="Spacing">
+                <TextCell Text="Variable span grid"
+                          Detail="HorizontalItemSpacing and VerticalItemSpacing"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:VariableSpanGridSpacingPage}" />
+            </TableSection>
+
+            <TableSection Title="Sizing">
+                <TextCell Text="Variable span grid"
+                          Detail="Variable size items"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:VariableSpanGridSizingPage}" />
+            </TableSection>
+
+
+            <TableSection Title="Grouping">
+                <TextCell Text="Vertical list"
+                          Detail="Grouping"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:VerticalListGroupingPage}" />
+                <TextCell Text="Vertical grid"
+                          Detail="Grouping"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:VerticalGridGroupingPage}" />
+                <TextCell Text="Variable span grid"
+                          Detail="Grouping"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:VariableSpanGridGroupingPage}" />
+                <TextCell Text="Vertical grid"
+                          Detail="Grouping with CanMixGroups"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type views:VerticalGridGroupingCanMixGroupsPage}" />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>

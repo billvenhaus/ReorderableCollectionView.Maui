@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:rcv="clr-namespace:ReorderableCollectionView.Maui;assembly=ReorderableCollectionView.Maui"
+             x:Class="ReorderableCollectionViewDemos.Views.VariableSpanGridSizingPage"
+             Title="Variable span grid (variable size items)">
+    <ContentView Margin="20">
+        <rcv:ReorderableCollectionView ItemsSource="{Binding Monkeys}" CanReorderItems="True" HorizontalOptions="Center" VerticalOptions="Center">
+            <CollectionView.ItemsLayout>
+                <rcv:VariableSpanGridItemsLayout x:Name="VariableSpanLayout"
+                        ItemWidth="150" ItemHeight="80"
+                        VerticalItemSpacing="5"
+                        HorizontalItemSpacing="5" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10" BackgroundColor="{StaticResource CollectionViewItemBackgroundColor}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" 
+                               Source="{Binding ImageUrl}" 
+                               Aspect="AspectFill"
+                               HeightRequest="60" 
+                               WidthRequest="60" />
+                        <Label Grid.Column="1" 
+                               Text="{Binding Name}" 
+                               LineBreakMode="TailTruncation"
+                               FontAttributes="Bold" />
+                        <Label Grid.Row="1"
+                               Grid.Column="1" 
+                               Text="{Binding Location}"
+                               LineBreakMode="TailTruncation"
+                               FontAttributes="Italic" 
+                               VerticalOptions="End" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </rcv:ReorderableCollectionView>
+    </ContentView>
+</ContentPage>

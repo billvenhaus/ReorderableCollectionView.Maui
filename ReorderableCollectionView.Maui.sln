@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReorderableCollectionViewDemos", "samples\ReorderableCollectionViewDemos\ReorderableCollectionViewDemos.csproj", "{B9502328-D805-4F85-98B0-963DE4226D4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReorderableCollectionView.Maui", "src\ReorderableCollectionView.Maui\ReorderableCollectionView.Maui.csproj", "{9787CED4-3547-4EC2-BD3F-C719DC0C6452}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{2264C857-64DE-4BD7-BE53-6204C65CFF15}"
+	ProjectSection(SolutionItems) = preProject
+		images\reorderablecollectionview_ios.gif = images\reorderablecollectionview_ios.gif
+		images\variablespangriditemslayout_android.gif = images\variablespangriditemslayout_android.gif
+		images\variablespangriditemslayout_windows.gif = images\variablespangriditemslayout_windows.gif
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4D6DD5AE-8443-4D9F-8555-43BDCD8A82B9}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9502328-D805-4F85-98B0-963DE4226D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9502328-D805-4F85-98B0-963DE4226D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9502328-D805-4F85-98B0-963DE4226D4A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B9502328-D805-4F85-98B0-963DE4226D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9502328-D805-4F85-98B0-963DE4226D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9502328-D805-4F85-98B0-963DE4226D4A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9787CED4-3547-4EC2-BD3F-C719DC0C6452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9787CED4-3547-4EC2-BD3F-C719DC0C6452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9787CED4-3547-4EC2-BD3F-C719DC0C6452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9787CED4-3547-4EC2-BD3F-C719DC0C6452}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+EndGlobal
