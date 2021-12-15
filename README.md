@@ -147,10 +147,3 @@ The UWP platform cannot reorder grouped items. Nor can it reorder items within a
 
 *"Built in reordering is not supported when items are grouped, or when a VariableSizedWrapGrid is used as the ItemsPanel."*  
 https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.listviewbase.canreorderitems
-
-# Donate
-
-If you found this helpful you can buy me a coffee:)
-
-<a href="https://www.buymeacoffee.com/billvenhaus" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
