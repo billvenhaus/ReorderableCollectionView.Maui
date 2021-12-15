@@ -17,8 +17,8 @@ Aside from that, it will behave & function exactly as the standard `CollectionVi
 The `VariableSpanGridItemsLayout` is much like the [GridItemsLayout](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.griditemslayout) however it does not have a fixed span. It instead has a column span which will vary based on the size of the control. Rather than having item sizes that grow & shrink, the span will grow & shrink. If desired, items can span multiple columns by supplying a custom lookup.
 
 
-![VariableSpanGridItemsLayout on Windows](images/VariableSpanGridItemsLayout_windows.gif)
-<!-- ![VariableSpanGridItemsLayout on Android](images/VariableSpanGridItemsLayout_android.gif) -->
+![VariableSpanGridItemsLayout on Windows](images/variablespangriditemslayout_windows.gif)
+<!-- ![VariableSpanGridItemsLayout on Android](images/variablespangriditemslayout_android.gif) -->
 
 # Getting started
 
