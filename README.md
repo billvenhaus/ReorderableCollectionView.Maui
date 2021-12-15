@@ -8,8 +8,6 @@ The ReorderableCollectionView extends the standard [CollectionView](https://docs
 
 Aside from that, it will behave & function exactly as the standard `CollectionView`. The 2 are not dependent on one another. The existing `GridItemsLayout` & `LinearItemLayout` are also compatible with this new control's reordering feature.
 
-<br/>
-
 ![ReorderableCollectionView on iOS](images/reorderablecollectionview_ios.gif)
 
 <br/>
@@ -116,8 +114,6 @@ public class SpanLookup : ISpanLookup
 
 ```
 
-<br/>
-
 # Properties
 
 Properties for the ReorderableCollectionView 
@@ -137,15 +133,11 @@ Properties for the VariableSpanGridItemsLayout
 | `VerticalItemSpacing`| double | Gets or sets the vertical spacing between items. |
 | `ItemSpanLookup`| IItemSpanLookup | Gets or sets a lookup that can assign custom column spans to each item. |  
 
-<br/>
-
 # Events
 
 | Event | Type | Description |
 | --- | --- | --- |
 | `ReorderCompleted`| EventHandler | Event that is triggered whenever reordering completes. |
-
-<br/>
 
 # Limitations
 
@@ -155,8 +147,6 @@ The UWP platform cannot reorder grouped items. Nor can it reorder items within a
 
 *"Built in reordering is not supported when items are grouped, or when a VariableSizedWrapGrid is used as the ItemsPanel."*  
 https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.listviewbase.canreorderitems
-
-<br/>
 
 # Donate
 
