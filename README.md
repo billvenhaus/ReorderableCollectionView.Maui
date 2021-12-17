@@ -8,8 +8,6 @@ The ReorderableCollectionView extends the standard [CollectionView](https://docs
 
 Aside from that, it will behave & function exactly as the standard `CollectionView`. The 2 are not dependent on one another. The existing `GridItemsLayout` & `LinearItemLayout` are also compatible with this new control's reordering feature.
 
-<br/>
-
 ![ReorderableCollectionView on iOS](images/reorderablecollectionview_ios.gif)
 
 <br/>
@@ -17,8 +15,8 @@ Aside from that, it will behave & function exactly as the standard `CollectionVi
 The `VariableSpanGridItemsLayout` is much like the [GridItemsLayout](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.griditemslayout) however it does not have a fixed span. It instead has a column span which will vary based on the size of the control. Rather than having item sizes that grow & shrink, the span will grow & shrink. If desired, items can span multiple columns by supplying a custom lookup.
 
 
-![VariableSpanGridItemsLayout on Windows](images/VariableSpanGridItemsLayout_windows.gif)
-<!-- ![VariableSpanGridItemsLayout on Android](images/VariableSpanGridItemsLayout_android.gif) -->
+![VariableSpanGridItemsLayout on Windows](images/variablespangriditemslayout_windows.gif)
+<!-- ![VariableSpanGridItemsLayout on Android](images/variablespangriditemslayout_android.gif) -->
 
 # Getting started
 
@@ -116,8 +114,6 @@ public class SpanLookup : ISpanLookup
 
 ```
 
-<br/>
-
 # Properties
 
 Properties for the ReorderableCollectionView 
@@ -137,15 +133,11 @@ Properties for the VariableSpanGridItemsLayout
 | `VerticalItemSpacing`| double | Gets or sets the vertical spacing between items. |
 | `ItemSpanLookup`| IItemSpanLookup | Gets or sets a lookup that can assign custom column spans to each item. |  
 
-<br/>
-
 # Events
 
 | Event | Type | Description |
 | --- | --- | --- |
 | `ReorderCompleted`| EventHandler | Event that is triggered whenever reordering completes. |
-
-<br/>
 
 # Limitations
 
@@ -155,12 +147,3 @@ The UWP platform cannot reorder grouped items. Nor can it reorder items within a
 
 *"Built in reordering is not supported when items are grouped, or when a VariableSizedWrapGrid is used as the ItemsPanel."*  
 https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.listviewbase.canreorderitems
-
-<br/>
-
-# Donate
-
-If you found this helpful you can buy me a coffee:)
-
-<a href="https://www.buymeacoffee.com/billvenhaus" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
