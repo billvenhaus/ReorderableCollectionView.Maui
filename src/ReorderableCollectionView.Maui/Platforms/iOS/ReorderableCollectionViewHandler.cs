@@ -1,6 +1,6 @@
 ﻿using System;
-using Microsoft.Maui.Controls;
 using Microsoft.Maui.Controls.Handlers.Items;
+using Microsoft.Maui.Essentials;
 using Microsoft.Maui.Graphics;
 
 namespace ReorderableCollectionView.Maui
@@ -14,8 +14,10 @@ namespace ReorderableCollectionView.Maui
 		{
 			if (Controller.Layout is VariableSpanGridViewLayout variableSpanLayout)
 			{
-				var maxWidth = Math.Min(Device.Info.ScaledScreenSize.Width, widthConstraint);
-				var maxHeight = Math.Min(Device.Info.ScaledScreenSize.Height, heightConstraint);
+				var info = DeviceDisplay.MainDisplayInfo;
+				var scaled = new Size(info.Width / info.Density, info.Height / info.Density);
+				var maxWidth = Math.Min(scaled.Width, widthConstraint);
+				var maxHeight = Math.Min(scaled.Height, heightConstraint);
 				var fitSize = variableSpanLayout.GetSizeThatFits(maxWidth, maxHeight, Controller.ItemsSource);
 				return fitSize;
 			}

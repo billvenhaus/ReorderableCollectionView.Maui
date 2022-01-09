@@ -1,8 +1,8 @@
 ﻿using System;
 using Android.Content;
 using AndroidX.RecyclerView.Widget;
-using Microsoft.Maui;
 using Microsoft.Maui.Controls;
+using Microsoft.Maui.Platform;
 using ARect = Android.Graphics.Rect;
 using AView = Android.Views.View;
 

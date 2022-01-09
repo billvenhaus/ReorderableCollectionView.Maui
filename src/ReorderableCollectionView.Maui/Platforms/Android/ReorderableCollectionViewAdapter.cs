@@ -1,10 +1,10 @@
 using System;
 using System.Collections;
 using Android.Content;
-using Microsoft.Maui;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Controls.Handlers.Items;
 using Microsoft.Maui.Graphics;
+using Microsoft.Maui.Platform;
 
 namespace ReorderableCollectionView.Maui
 {

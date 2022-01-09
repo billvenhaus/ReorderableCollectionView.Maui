@@ -34,9 +34,14 @@ namespace ReorderableCollectionView.Maui
 		{
 			if (ItemsLayout is VariableSpanGridItemsLayout)
 			{
-				if (Device.IsInvokeRequired)
+				var invalidateMeasure = () => InvalidateMeasureNonVirtual(InvalidationTrigger.MeasureChanged);
+				if (Dispatcher.IsDispatchRequired)
 				{
-					Device.BeginInvokeOnMainThread(() => InvalidateMeasureNonVirtual(InvalidationTrigger.MeasureChanged));
+					Dispatcher.Dispatch(invalidateMeasure);
+				}
+				else
+				{
+					invalidateMeasure();
 				}
 			}
 		}

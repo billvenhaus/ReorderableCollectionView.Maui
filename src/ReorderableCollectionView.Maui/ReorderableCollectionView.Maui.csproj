@@ -17,10 +17,10 @@
 		<AssemblyName>ReorderableCollectionView.Maui</AssemblyName>
 		<RootNamespace>ReorderableCollectionView.Maui</RootNamespace>
 		<PackageId>ReorderableCollectionView.Maui</PackageId>
-		<Version>1.0.0-preview.10.2068</Version>
+		<Version>1.0.0-preview.11.2349</Version>
 		<Authors>Bill Venhaus</Authors>
 		<Description>ReorderableCollectionView for .NET MAUI</Description>
-		<Copyright>Copyright 2021</Copyright>
+		<Copyright>Copyright 2022</Copyright>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageProjectUrl>https://github.com/billvenhaus/ReorderableCollectionView.Maui</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/billvenhaus/ReorderableCollectionView.Maui</RepositoryUrl>

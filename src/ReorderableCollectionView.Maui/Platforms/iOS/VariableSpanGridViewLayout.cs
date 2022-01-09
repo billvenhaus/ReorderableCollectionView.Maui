@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using CoreGraphics;
 using Foundation;
+using ObjCRuntime;
 using UIKit;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Controls.Handlers.Items;
